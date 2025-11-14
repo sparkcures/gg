@@ -126,6 +126,11 @@ func (dc *Context) Image() image.Image {
 	return dc.im
 }
 
+// RGBA returns a pointer to the image that can be used with draw directly
+func (dc *Context) RGBA() *image.RGBA {
+	return dc.im
+}
+
 // Width returns the width of the image in pixels.
 func (dc *Context) Width() int {
 	return dc.width
